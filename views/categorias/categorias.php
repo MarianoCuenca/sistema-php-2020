@@ -13,34 +13,28 @@
 			<div class="container m-5">
 				<h2><?php echo $data["titulo"]; ?></h2>
 				<div class="float-right">
-					<a href="index.php?c=peliculas&a=nuevo" class="btn btn-primary pull-right">Agregar</a>
+					<a href="index.php?c=categorias&a=nuevo" class="btn btn-primary pull-right">Agregar</a>
 				</div>
 			</div><br>
 
 			<div class="table-responsive">
-				<table class="table table-bordered">
-					<thead>
+                <table class="table table-bordered">
+                    <thead>
 						<tr>
 							<th>ID</th>
 							<th>NOMBRE</th>
-							<th>DESCRIPCIÓN</th>
-							<th>AÑO</th>
-							<th>CATEGORÍA</th>
 							<th>Editar</th>
 							<th>Eliminar</th>
 						</tr>
 					</thead>
 					
 					<tbody>
-						<?php foreach($data["peliculas"] as $dato) {
+						<?php foreach($data["categorias"] as $dato) {
 							echo "<tr>";
 							echo "<td>".$dato["id"]."</td>";
 							echo "<td>".$dato["name"]."</td>";
-							echo "<td>".$dato["description"]."</td>";
-							echo "<td>".$dato["year"]."</td>";
-							echo "<td>".$dato["categoria_id"]."</td>";
-							echo "<td><a href='index.php?c=peliculas&a=modificar&id=".$dato["id"]."' class='btn btn-warning'>Modificar</a></td>";
-							echo "<td><a href='index.php?c=peliculas&a=eliminar&id=".$dato["id"]."' class='btn btn-danger'>Eliminar</a></td>";
+							echo "<td><a href='index.php?c=categorias&a=modificar&id=".$dato["id"]."' class='btn btn-warning'>Modificar</a></td>";
+							echo "<td><a href='index.php?c=categorias&a=eliminar&id=".$dato["id"]."' class='btn btn-danger'>Eliminar</a></td>";
 							echo "</tr>";
 						}
 						?>

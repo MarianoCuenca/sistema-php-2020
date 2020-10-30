@@ -8,11 +8,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title><?php echo $data["titulo"]; ?></title>
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<script src="assets/js/bootstrap.min.js" ></script>
+		<?php include_once("views/includes/head.php") ?>
 	</head>
 
 	<body>
+		<?php include_once("views/includes/navbar.php") ?>
 		<div class="container">
 
 			<h2><?php echo $data["titulo"]; ?></h2>

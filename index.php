@@ -4,6 +4,7 @@
 	require_once "core/routes.php";
 	require_once "config/database.php";
 	require_once "controllers/Peliculas.php";
+	require_once "controllers/Categorias.php";
 
 	if(isset($_GET['c'])){
 
