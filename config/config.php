@@ -1,6 +1,6 @@
 <?php
 	
-	define("CONTROLADOR_PRINCIPAL", "Peliculas");
+	define("CONTROLADOR_PRINCIPAL", "Login");
 	define("ACCION_PRINCIPAL", "index");
 	
 ?>

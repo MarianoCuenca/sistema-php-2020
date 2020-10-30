@@ -11,8 +11,18 @@
                     Menú
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/php-mvc-derlis">Peliculas</a>
+                <a class="dropdown-item" href="/php-mvc-derlis?c=peliculas">Peliculas</a>
                 <a class="dropdown-item" href="/php-mvc-derlis?c=categorias">Categorías</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mr-5">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Logout
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="index.php?c=login" href="#">Cerrar Sesión</a>
+                </div>
             </li>
         </ul>
     </div>
